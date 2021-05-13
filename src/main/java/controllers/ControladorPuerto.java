@@ -93,16 +93,5 @@ public class ControladorPuerto {
 		return listaVehiculos;
 	}
 
-	// En este caso se va a utilizar una nativeQuery, que permite pasar código
-	// SQL directamente a la base de datos
-//	public List<Barco> findByMarca(String marca) {
-//		this.em = entityManagerFactory.createEntityManager();
-//		this.consulta = em.createNativeQuery("Select * from vehiculo where marca=?", Barco.class);
-//		this.consulta.setParameter(1, marca);
-//		List<Barco> listaVehiculos = (List<Barco>) consulta.getResultList();
-//		this.em.close();
-//		return listaVehiculos;
-//	}
-//	}
 }
 

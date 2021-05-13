@@ -35,7 +35,7 @@ public class Prueba {
 //		listaVehiculos.forEach(System.out::println);
 		for (Barco nombre : listaBarcos)
 			System.out.println(nombre.toString());
-		// Se modifica el precio del vehículo id = 1
+		// Se modifica el barco
 		Barco barcoModificar = cv.findByNombre("Titanic");
 		if (barcoModificar != null) {
 			barcoModificar.setCodbarcos(1111);
@@ -48,7 +48,7 @@ public class Prueba {
 //		listaVehiculos.forEach(System.out::println);
 		for (Barco nombre : listaBarcos)
 			System.out.println(nombre);
-		// Borrado del vehículo de matrícula 0998FRR
+		// Borrado del barco kayac
 		Barco barcoBorrar = cv.findByNombre("kayac");
 		cv.borrarBarco(barcoBorrar);
 
